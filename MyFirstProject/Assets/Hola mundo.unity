@@ -155,6 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cdc1c238b3908345b654de9eaf52707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UIText: {fileID: 1423330667}
+  Speed: 5
+  relativeTo: 0
 --- !u!65 &223962964
 BoxCollider:
   m_ObjectHideFlags: 0
