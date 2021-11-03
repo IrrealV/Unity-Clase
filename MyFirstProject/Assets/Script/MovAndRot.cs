@@ -3,31 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Movement : MonoBehaviour
+public class MovAndRot : MonoBehaviour
 {
     public TextMeshProUGUI UIText;
     public float Speed = 5;
+    public float RotSpeed = 120;
     public Space relativeTo;
-    public float SpeedX = 5;
-    public float SpeedY = 3;
+    
     // Start is called before the first frame update
 
     // Update is called once per frame
     void Update()
     {
-        float v = Input.GetAxisRaw("Horizontal");
-        float h = Input.GetAxisRaw("Vertical");
-        Vector3 newVPos = Vector3.right * v;
-        Vector3 newHPos = Vector3.up * h;
-        //direccion (Vector tamaño 1)
-        Vector3 dir = (newHPos + newVPos);
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+        Vector3 forwardMov = Vector3.forward * v * Speed;
         //cambio de posición por segundo (pero en Unity nos movemos cada fotograma)
-        Vector3 velocity = dir * Speed;
         //cambio de pos. por fotograma
-        Vector3 displacement = velocity * Time.deltaTime;
+        Vector3 displacement = forwardMov * Time.deltaTime;
         //movimiento acorde a un espacio de coordenadas
         transform.Translate(displacement, relativeTo);
-        
-        UIText.text = velocity.ToString("F2");
+
+        Vector3 angularMov = Vector3.up * RotSpeed * Time.deltaTime * h;
+        transform.Rotate(angularMov);
+
+        //UIText.text = velocity.ToString("F2");
     }
 }
