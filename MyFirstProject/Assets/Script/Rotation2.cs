@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class rebote : MonoBehaviour
+public class Rotation2 : MonoBehaviour
 {
-    public float RSpeed = 5;
-    public float USpeed = 5;
+    public TextMeshProUGUI UItext;
+    public float RotSpeed = 20;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,6 @@ public class rebote : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = (new Vector3 (0f,0f,RSpeed) * Time.deltaTime);
+        transform.Rotate(new Vector3(RotSpeed, 0f, 0f)*Time.deltaTime);
     }
 }
