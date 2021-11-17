@@ -16,6 +16,21 @@ public class rebote : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = (new Vector3 (0f,0f,RSpeed) * Time.deltaTime);
+        transform.Translate(new Vector3(RSpeed, USpeed, 0f)* Time.deltaTime);
+
+        if (transform.position.y >= 4f){
+
+            USpeed = -5f;
+
+            transform.Translate(new Vector3(RSpeed, USpeed, 0f)*Time.deltaTime);
+        
+        
+        };
+
+        if (transform.position.y <= 1f)
+        {
+            USpeed = +5f;
+            transform.Translate(new Vector3(RSpeed, USpeed, 0f) * Time.deltaTime);
+        }
     }
 }
