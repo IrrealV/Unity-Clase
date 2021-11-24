@@ -17,7 +17,8 @@ public class Ej_bullet : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+        //Script de movimiento
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
@@ -25,6 +26,8 @@ public class Ej_bullet : MonoBehaviour
         v1.Normalize();
         transform.position += v1 * Time.deltaTime * Speed;
 
+
+        //Esto sirve para disparar cuando pulses la tecla Espacio
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject go1 = Instantiate(bullet, Cañon1.position, bullet.transform.rotation);
@@ -33,6 +36,8 @@ public class Ej_bullet : MonoBehaviour
             Destroy(go2, 1);
         };
 
+
+        //Esto sirve para disparar mientras mantienes pulsado la letra M
         if (Input.GetKey(KeyCode.M))
         {
             GameObject go = Instantiate(bullet, Cañon1.position, bullet.transform.rotation);

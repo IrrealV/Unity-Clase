@@ -9,7 +9,8 @@ public class ProjectileMov : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
+        //Especifica la velocidad y el movimiento automatico de la bala
         transform.Translate(Speed * Vector3.up * Time.deltaTime, relativeTo );   
     }
 }
