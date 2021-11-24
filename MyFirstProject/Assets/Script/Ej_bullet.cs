@@ -7,6 +7,7 @@ public class Ej_bullet : MonoBehaviour
     Vector3 v1;
     public float Speed;
     public GameObject bullet;
+    public Transform Cañon1, Cañon2;
 
     // Start is called before the first frame update
     void Start()
@@ -24,12 +25,23 @@ public class Ej_bullet : MonoBehaviour
         v1.Normalize();
         transform.position += v1 * Time.deltaTime * Speed;
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-           Instantiate(bullet, transform.position, Quaternion.identity);
+            GameObject go1 = Instantiate(bullet, Cañon1.position, bullet.transform.rotation);
+            GameObject go2 = Instantiate(bullet, Cañon2.position, bullet.transform.rotation);
+            Destroy(go1, 1);
+            Destroy(go2, 1);
         };
 
-        
+        if (Input.GetKey(KeyCode.M))
+        {
+            GameObject go = Instantiate(bullet, Cañon1.position, bullet.transform.rotation);
+            Destroy(go, 1);
+            GameObject go2 = Instantiate(bullet, Cañon2.position, bullet.transform.rotation);
+            Destroy(go2, 1);
+        };
+
+
 
     }
 }
