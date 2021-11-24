@@ -228,7 +228,7 @@ GameObject:
   m_Layer: 0
   m_Name: "Ca\xF1on1"
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -459,6 +459,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   bullet: {fileID: 1259865673663102, guid: 5b20f4bfa66e2ea40908454966f6c165, type: 3}
+  "Ca\xF1on1": {fileID: 251263879}
+  "Ca\xF1on2": {fileID: 2123881231}
 --- !u!1 &1140033797
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +643,7 @@ GameObject:
   m_Layer: 0
   m_Name: "Ca\xF1on2"
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
