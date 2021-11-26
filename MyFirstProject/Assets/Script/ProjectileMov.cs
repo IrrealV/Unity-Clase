@@ -6,6 +6,11 @@ public class ProjectileMov : MonoBehaviour
 {
     public float Speed = 60;
     public Space relativeTo;
+    public float DestroyTime;
+    private void Start()
+    {
+        Destroy(gameObject,DestroyTime);
+    }
 
     // Update is called once per frame
     void Update()

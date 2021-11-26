@@ -26,14 +26,17 @@ public class Ej_bullet : MonoBehaviour
         v1.Normalize();
         transform.position += v1 * Time.deltaTime * Speed;
 
+        if (transform.rotation())
+        {
+
+        }
+
 
         //Esto sirve para disparar cuando pulses la tecla Espacio
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject go1 = Instantiate(bullet, Cañon1.position, bullet.transform.rotation);
             GameObject go2 = Instantiate(bullet, Cañon2.position, bullet.transform.rotation);
-            Destroy(go1, 1);
-            Destroy(go2, 1);
         };
 
 
@@ -41,9 +44,7 @@ public class Ej_bullet : MonoBehaviour
         if (Input.GetKey(KeyCode.M))
         {
             GameObject go = Instantiate(bullet, Cañon1.position, bullet.transform.rotation);
-            Destroy(go, 1);
             GameObject go2 = Instantiate(bullet, Cañon2.position, bullet.transform.rotation);
-            Destroy(go2, 1);
         };
 
 
