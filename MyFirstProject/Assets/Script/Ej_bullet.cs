@@ -6,8 +6,10 @@ public class Ej_bullet : MonoBehaviour
 {
     Vector3 v1;
     public float Speed;
+    public float rotSped;
     public GameObject bullet;
     public Transform Cañon1, Cañon2;
+    public Space relativoA;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +28,41 @@ public class Ej_bullet : MonoBehaviour
         v1.Normalize();
         transform.position += v1 * Time.deltaTime * Speed;
 
-        if (transform.rotation())
+
+
+        Vector3 displacement = (Vector3.up * h);
+
+
+
+
+        if (Input.GetKey(KeyCode.D))
         {
+            
+            if (Quaternion.identity.y >= (-20))
+            {
+                transform.Rotate(-displacement);
+            }
 
         }
+
+
+
+
+        /*if (Quaternion.identity.y != (0))
+        {
+            
+        }*/
+
+
+
+
+
+
+
+
+
+
+
 
 
         //Esto sirve para disparar cuando pulses la tecla Espacio
