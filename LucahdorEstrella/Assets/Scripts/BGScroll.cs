@@ -13,7 +13,7 @@ public class BGScroll : MonoBehaviour
     void Start()
     {
         //guardamos lo largo que mide el gráfico y lo multiplicamos por su escala
-        gfxSize = graphic.bounds.size.y * graphic.transform.localScale.y;
+        gfxSize = graphic.bounds.size.y;
         //guardamos la posicion inicial
         initialYPos = transform.position.y;
         //y guardamos la cantidad de distanciona que debe recorrer el grafico antes de volver a sud posicion inicial
