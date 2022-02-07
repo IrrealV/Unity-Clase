@@ -28,8 +28,20 @@ public class PlayerMovement : MonoBehaviour
 
         //Movimiento
         Vector3 dir = new Vector3(h, v).normalized;
-        transform.Translate(dir* MaxSpeed* Time.deltaTime);
 
+        //Cambiaremos esto para poder usar la aceleracion
+        //transform.Translate(dir* MaxSpeed* Time.deltaTime);
+
+        currentVelocityX = Mathf.MoveTowards(currentVelocityX, dir.x * MaxSpeed, MaxAcceleration * Time.deltaTime);
+        currentVelocityY = Mathf.MoveTowards(currentVelocityY, dir.y * MaxSpeed, MaxAcceleration * Time.deltaTime);
+
+
+        //velocity es el vector que indica la velocidad por segudo...
+        Vector3 velocity = new Vector3(currentVelocityX, currentVelocityY);
+        //hay que pasarlo a movimiento por cvada instante, eso es el desplazamiento
+        Vector3 displacement = velocity * Time.deltaTime;
+
+        transform.Translate(displacement);
 
         //Limites
         float xClamped = Mathf.Clamp(transform.position.x, -HorizontalLimit, HorizontalLimit);
