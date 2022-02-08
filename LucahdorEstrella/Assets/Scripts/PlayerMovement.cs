@@ -26,12 +26,14 @@ public class PlayerMovement : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        //Movimiento
+        //Direcccion hacia las que nos queremos mover
         Vector3 dir = new Vector3(h, v).normalized;
 
         //Cambiaremos esto para poder usar la aceleracion
         //transform.Translate(dir* MaxSpeed* Time.deltaTime);
 
+
+        //acelereacion (cambio en la velocidad) por cada dimension
         currentVelocityX = Mathf.MoveTowards(currentVelocityX, dir.x * MaxSpeed, MaxAcceleration * Time.deltaTime);
         currentVelocityY = Mathf.MoveTowards(currentVelocityY, dir.y * MaxSpeed, MaxAcceleration * Time.deltaTime);
 
@@ -43,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(displacement);
 
-        //Limites
+        //Límites
         float xClamped = Mathf.Clamp(transform.position.x, -HorizontalLimit, HorizontalLimit);
         float yClamped = Mathf.Clamp(transform.position.y, -VerticalLimits, VerticalLimits);
 
