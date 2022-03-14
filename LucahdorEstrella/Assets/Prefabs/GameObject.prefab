@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7133652123440595204}
   m_Layer: 0
   m_Name: beams_28 (1)
-  m_TagString: Bullet
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 7305401177450101257}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Bullet
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 5934725986246464744}
   m_Layer: 0
   m_Name: beams_28
-  m_TagString: Bullet
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

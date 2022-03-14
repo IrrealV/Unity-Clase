@@ -8,7 +8,10 @@ public class hpsistem : MonoBehaviour
     public int currentHP;
     public string TagDaño ;
     public string TagVida ;
-    
+    public string TagMina ;
+    public Transform SpawnPoint;
+    public GameObject efecto;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +33,19 @@ public class hpsistem : MonoBehaviour
 
         }
 
+        if (collision.CompareTag(TagMina))
+        {
+            currentHP -= 50;
+            if (currentHP <= 0)
+            {
+                Destroy(gameObject);
+            }
+            GameObject b1 = Instantiate(efecto, SpawnPoint.position, Quaternion.identity);
+         
+        }
+
         if (collision.CompareTag(TagVida))
         {
-            
             if(currentHP < MaxHP)
             {
                 currentHP += 10;
