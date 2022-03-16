@@ -36,12 +36,17 @@ public class hpsistem : MonoBehaviour
         if (collision.CompareTag(TagMina))
         {
             currentHP -= 50;
+<<<<<<< Updated upstream
             if (currentHP <= 0)
             {
                 Destroy(gameObject);
             }
             GameObject b1 = Instantiate(efecto, SpawnPoint.position, Quaternion.identity);
          
+=======
+            GameObject b1 = Instantiate(efecto, SpawnPoint.position, Quaternion.identity);
+
+>>>>>>> Stashed changes
         }
 
         if (collision.CompareTag(TagVida))

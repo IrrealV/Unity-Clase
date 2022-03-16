@@ -792,7 +792,11 @@ MonoBehaviour:
   MaxHP: 1
   currentHP: 0
   "TagDa\xF1o": Player
+<<<<<<< Updated upstream
   TagVida: 0
+=======
+  TagVida: 
+>>>>>>> Stashed changes
   TagMina: Player
   SpawnPoint: {fileID: 601934203}
   efecto: {fileID: 4980228905573196772, guid: 6be3afaf7ff530a4a825def831495d4e, type: 3}
@@ -1597,9 +1601,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 0
   currentHP: 0
+<<<<<<< Updated upstream
   "TagDa\xF1o": 0
   TagVida: 0
   TagMina: 0
+=======
+  "TagDa\xF1o": 
+  TagVida: 
+  TagMina: 
+>>>>>>> Stashed changes
   SpawnPoint: {fileID: 0}
   efecto: {fileID: 0}
 --- !u!1 &2109742184
