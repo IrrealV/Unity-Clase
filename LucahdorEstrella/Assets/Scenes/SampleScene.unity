@@ -345,11 +345,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7286480422768763719, guid: c25124afcf3f3fd44b3a1c645d86b477, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.7
+      value: 45.3
       objectReference: {fileID: 0}
     - target: {fileID: 7286480422768763719, guid: c25124afcf3f3fd44b3a1c645d86b477, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.4
+      value: 14.9
       objectReference: {fileID: 0}
     - target: {fileID: 7286480422768763719, guid: c25124afcf3f3fd44b3a1c645d86b477, type: 3}
       propertyPath: m_LocalPosition.z
@@ -792,11 +792,7 @@ MonoBehaviour:
   MaxHP: 1
   currentHP: 0
   "TagDa\xF1o": Player
-<<<<<<< Updated upstream
   TagVida: 0
-=======
-  TagVida: 
->>>>>>> Stashed changes
   TagMina: Player
   SpawnPoint: {fileID: 601934203}
   efecto: {fileID: 4980228905573196772, guid: 6be3afaf7ff530a4a825def831495d4e, type: 3}
@@ -1601,15 +1597,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHP: 0
   currentHP: 0
-<<<<<<< Updated upstream
   "TagDa\xF1o": 0
   TagVida: 0
   TagMina: 0
-=======
-  "TagDa\xF1o": 
-  TagVida: 
-  TagMina: 
->>>>>>> Stashed changes
   SpawnPoint: {fileID: 0}
   efecto: {fileID: 0}
 --- !u!1 &2109742184
@@ -1838,6 +1828,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2751999533624343946, guid: 81f8f7b0f3ea5494ab9f94a0bf7b573c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751999533624343948, guid: 81f8f7b0f3ea5494ab9f94a0bf7b573c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.412878
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751999533624343948, guid: 81f8f7b0f3ea5494ab9f94a0bf7b573c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.412878
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751999533624343948, guid: 81f8f7b0f3ea5494ab9f94a0bf7b573c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751999533624343948, guid: 81f8f7b0f3ea5494ab9f94a0bf7b573c, type: 3}
+      propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2751999533624343949, guid: 81f8f7b0f3ea5494ab9f94a0bf7b573c, type: 3}

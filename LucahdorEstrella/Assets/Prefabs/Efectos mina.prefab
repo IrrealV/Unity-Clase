@@ -1419,7 +1419,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
   UVModule:
     serializedVersion: 2
-    enabled: 0
+    enabled: 1
     mode: 0
     timeMode: 0
     fps: 30
@@ -4948,6 +4948,10 @@ PrefabInstance:
     - target: {fileID: 2532113039840374894, guid: a5a2d80a6af63a8488bdba9c8f8698d9, type: 3}
       propertyPath: lengthInSec
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532113039840374894, guid: a5a2d80a6af63a8488bdba9c8f8698d9, type: 3}
+      propertyPath: UVModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2532113039840374894, guid: a5a2d80a6af63a8488bdba9c8f8698d9, type: 3}
       propertyPath: InitialModule.maxNumParticles
